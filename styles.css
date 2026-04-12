@@ -1,0 +1,91 @@
+/* General */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #0a0f1c;
+    color: #e0e0e0;
+}
+
+/* Header Layout */
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px 40px;
+    background: #111a2b;
+}
+
+/* Profile Image */
+.profile-img {
+    width: 150px;
+    height: auto;              /* allows full image height */
+    border-radius: 10px;       /* remove circle to avoid cropping */
+    object-fit: contain;       /* shows entire image */
+    border: 3px solid #00ffcc;
+    margin-right: 20px;
+}
+
+/* Header Text */
+.header-text h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+.header-text p {
+    margin: 5px 0 0;
+    color: #00ffcc;
+}
+
+/* Navigation */
+nav {
+    text-align: center;
+    background: #0d1424;
+    padding: 10px;
+}
+
+nav a {
+    color: #00ffcc;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffffff;
+}
+
+/* Sections */
+section {
+    padding: 40px;
+}
+
+h2 {
+    color: #00ffcc;
+}
+
+/* Projects */
+.project {
+    background: #111a2b;
+    padding: 15px;
+    margin: 10px 0;
+    border-left: 4px solid #00ffcc;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #0d1424;
+}
+
+/* Responsive (Mobile) */
+@media (max-width: 600px) {
+    .header-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-img {
+        margin-bottom: 10px;
+    }
+}
